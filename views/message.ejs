@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+
+    <a class="link back" href="/">← All messages</a>
+
+    <article class="card detail">
+        <div class="message-meta">
+            <div class="avatar" aria-hidden="true">
+                <%= message.user.charAt(0).toUpperCase() %>
+            </div>
+            <div>
+                <strong>
+                    <%= message.user %>
+                </strong><br />
+                <time class="muted">
+                    <%= message.added.toLocaleString("en-GB", { dateStyle: "long" , timeStyle: "short" }) %>
+                </time>
+            </div>
+        </div>
+        <p class="detail-text">
+            <%= message.text %>
+        </p>
+    </article>
+
+    <%- include("partials/footer") %>

@@ -1,0 +1,21 @@
+<%- include("partials/header") %>
+
+    <section class="page-head">
+        <h1>New message</h1>
+        <p class="muted">Say something to the board.</p>
+    </section>
+
+    <form class="card form" method="POST" action="/new">
+        <label for="messageUser">Name</label>
+        <input type="text" id="messageUser" name="messageUser" maxlength="40" required />
+
+        <label for="messageText">Message</label>
+        <textarea id="messageText" name="messageText" rows="5" maxlength="500" required></textarea>
+
+        <div class="form-actions">
+            <a class="btn btn-ghost" href="/">Cancel</a>
+            <button class="btn btn-primary" type="submit">Send message</button>
+        </div>
+    </form>
+
+    <%- include("partials/footer") %>

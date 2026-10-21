@@ -1,0 +1,36 @@
+<%- include("partials/header") %>
+
+    <section class="page-head">
+        <h1>
+            <%= title %>
+        </h1>
+        <p class="muted">
+            <%= messages.length %> messages
+        </p>
+    </section>
+
+    <ul class="message-list">
+        <% messages.forEach((message, index)=> { %>
+            <li class="card message">
+                <div class="avatar" aria-hidden="true">
+                    <%= message.user.charAt(0).toUpperCase() %>
+                </div>
+                <div class="message-body">
+                    <div class="message-meta">
+                        <strong>
+                            <%= message.user %>
+                        </strong>
+                        <time class="muted">
+                            <%= message.added.toLocaleString("en-GB", { dateStyle: "medium" , timeStyle: "short" }) %>
+                        </time>
+                    </div>
+                    <p class="message-text">
+                        <%= message.text %>
+                    </p>
+                    <a class="link" href="/messages/<%= index %>">Open →</a>
+                </div>
+            </li>
+            <% }) %>
+    </ul>
+
+    <%- include("partials/footer") %>
