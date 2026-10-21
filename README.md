@@ -29,7 +29,7 @@ A small message board built with Node.js, Express, and EJS. Visitors can read me
 ### Installation
 
 ```bash
-git clone https://github.com/<your-username>/mini-message-board.git
+git clone https://github.com/Dee-pack/mini-message-board.git
 cd mini-message-board
 npm install
 ```
