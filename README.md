@@ -2,7 +2,7 @@
 
 A small message board built with Node.js, Express, and EJS. Visitors can read messages, post a new one, and open any message on its own page. The interface is responsive and supports light and dark themes.
 
-**Live demo:**
+**Live demo:** [Message-Board app](https://mini-message-board-tzmc.onrender.com)
 
 ## Features
 
