@@ -317,6 +317,16 @@ main.container {
     margin-top: 1rem;
 }
 
+.form-errors {
+    margin: 0 0 1rem;
+    padding: 0.9rem 1.1rem 0.9rem 2rem;
+    border: 1px solid #e11d48;
+    border-radius: 10px;
+    background: color-mix(in srgb, #e11d48 10%, transparent);
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 560px) {
     main.container {
